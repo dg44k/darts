@@ -27,8 +27,25 @@ html, body{
 }
 
 .ball{
+  display: block;
+  animation-name: ball-animation;
   position: absolute;
   top: 70%;
   display: block;
   width: 30px;
+}
+
+
+
+
+@keyframes ball-animation {
+  0%{
+    top: 98vh;
+    left: 50%;
+    transition: ease-in-out 9s;
+  }
+  100%{
+    top: 0;
+    left: 50%;
+  }
 }
